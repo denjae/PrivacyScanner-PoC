@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B4DFFCC23C480BA00328D50 /* ThreatmentChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4DFFC723C480BA00328D50 /* ThreatmentChecker.swift */; };
+		8B4DFFCD23C480BA00328D50 /* ThreatmentComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4DFFC823C480BA00328D50 /* ThreatmentComponents.swift */; };
+		8B67ABEB23D1EBDF00FCF206 /* CheckerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B67ABEA23D1EBDF00FCF206 /* CheckerHelper.swift */; };
+		8BB8E30E23C47EB0004AACF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8E30D23C47EB0004AACF8 /* AppDelegate.swift */; };
+		8BB8E31023C47EB0004AACF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8E30F23C47EB0004AACF8 /* ContentView.swift */; };
+		8BB8E31223C47EB2004AACF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB8E31123C47EB2004AACF8 /* Assets.xcassets */; };
+		8BB8E31523C47EB2004AACF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB8E31423C47EB2004AACF8 /* Preview Assets.xcassets */; };
+		8BB8E31823C47EB2004AACF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB8E31623C47EB2004AACF8 /* Main.storyboard */; };
+		8BB8E32423C47EB2004AACF8 /* PrivacyScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8E32323C47EB2004AACF8 /* PrivacyScannerTests.swift */; };
+		8BB8E32F23C47EB2004AACF8 /* PrivacyScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8E32E23C47EB2004AACF8 /* PrivacyScannerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BB8E32023C47EB2004AACF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BB8E30223C47EB0004AACF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BB8E30923C47EB0004AACF8;
+			remoteInfo = PrivacyScanner;
+		};
+		8BB8E32B23C47EB2004AACF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BB8E30223C47EB0004AACF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BB8E30923C47EB0004AACF8;
+			remoteInfo = PrivacyScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B4DFFC723C480BA00328D50 /* ThreatmentChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThreatmentChecker.swift; path = PrivacyScanner/ThreatmentChecker.swift; sourceTree = SOURCE_ROOT; };
+		8B4DFFC823C480BA00328D50 /* ThreatmentComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThreatmentComponents.swift; path = PrivacyScanner/ThreatmentComponents.swift; sourceTree = SOURCE_ROOT; };
+		8B67ABEA23D1EBDF00FCF206 /* CheckerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerHelper.swift; sourceTree = "<group>"; };
+		8B90D1FA23DF2208008B5B85 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		8BB8E30A23C47EB0004AACF8 /* PrivacyScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivacyScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB8E30D23C47EB0004AACF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BB8E30F23C47EB0004AACF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8BB8E31123C47EB2004AACF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BB8E31423C47EB2004AACF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BB8E31723C47EB2004AACF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BB8E31923C47EB2004AACF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB8E31A23C47EB2004AACF8 /* PrivacyScanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrivacyScanner.entitlements; sourceTree = "<group>"; };
+		8BB8E31F23C47EB2004AACF8 /* PrivacyScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivacyScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB8E32323C47EB2004AACF8 /* PrivacyScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyScannerTests.swift; sourceTree = "<group>"; };
+		8BB8E32523C47EB2004AACF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB8E32A23C47EB2004AACF8 /* PrivacyScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivacyScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB8E32E23C47EB2004AACF8 /* PrivacyScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyScannerUITests.swift; sourceTree = "<group>"; };
+		8BB8E33023C47EB2004AACF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BB8E30723C47EB0004AACF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB8E31C23C47EB2004AACF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB8E32723C47EB2004AACF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BB8E30123C47EB0004AACF8 = {
+			isa = PBXGroup;
+			children = (
+				8BB8E30C23C47EB0004AACF8 /* PrivacyScanner */,
+				8BB8E32223C47EB2004AACF8 /* PrivacyScannerTests */,
+				8BB8E32D23C47EB2004AACF8 /* PrivacyScannerUITests */,
+				8BB8E30B23C47EB0004AACF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BB8E30B23C47EB0004AACF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BB8E30A23C47EB0004AACF8 /* PrivacyScanner.app */,
+				8BB8E31F23C47EB2004AACF8 /* PrivacyScannerTests.xctest */,
+				8BB8E32A23C47EB2004AACF8 /* PrivacyScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BB8E30C23C47EB0004AACF8 /* PrivacyScanner */ = {
+			isa = PBXGroup;
+			children = (
+				8B4DFFC723C480BA00328D50 /* ThreatmentChecker.swift */,
+				8B4DFFC823C480BA00328D50 /* ThreatmentComponents.swift */,
+				8B67ABEA23D1EBDF00FCF206 /* CheckerHelper.swift */,
+				8BB8E30D23C47EB0004AACF8 /* AppDelegate.swift */,
+				8BB8E30F23C47EB0004AACF8 /* ContentView.swift */,
+				8BB8E31623C47EB2004AACF8 /* Main.storyboard */,
+				8BB8E31923C47EB2004AACF8 /* Info.plist */,
+				8BB8E31A23C47EB2004AACF8 /* PrivacyScanner.entitlements */,
+				8BB8E31123C47EB2004AACF8 /* Assets.xcassets */,
+				8BB8E31323C47EB2004AACF8 /* Preview Content */,
+			);
+			path = PrivacyScanner;
+			sourceTree = "<group>";
+		};
+		8BB8E31323C47EB2004AACF8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8BB8E31423C47EB2004AACF8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BB8E32223C47EB2004AACF8 /* PrivacyScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BB8E32323C47EB2004AACF8 /* PrivacyScannerTests.swift */,
+				8BB8E32523C47EB2004AACF8 /* Info.plist */,
+			);
+			path = PrivacyScannerTests;
+			sourceTree = "<group>";
+		};
+		8BB8E32D23C47EB2004AACF8 /* PrivacyScannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BB8E32E23C47EB2004AACF8 /* PrivacyScannerUITests.swift */,
+				8BB8E33023C47EB2004AACF8 /* Info.plist */,
+			);
+			path = PrivacyScannerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BB8E30923C47EB0004AACF8 /* PrivacyScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB8E33323C47EB2004AACF8 /* Build configuration list for PBXNativeTarget "PrivacyScanner" */;
+			buildPhases = (
+				8BB8E30623C47EB0004AACF8 /* Sources */,
+				8BB8E30723C47EB0004AACF8 /* Frameworks */,
+				8BB8E30823C47EB0004AACF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrivacyScanner;
+			productName = PrivacyScanner;
+			productReference = 8BB8E30A23C47EB0004AACF8 /* PrivacyScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BB8E31E23C47EB2004AACF8 /* PrivacyScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB8E33623C47EB2004AACF8 /* Build configuration list for PBXNativeTarget "PrivacyScannerTests" */;
+			buildPhases = (
+				8BB8E31B23C47EB2004AACF8 /* Sources */,
+				8BB8E31C23C47EB2004AACF8 /* Frameworks */,
+				8BB8E31D23C47EB2004AACF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BB8E32123C47EB2004AACF8 /* PBXTargetDependency */,
+			);
+			name = PrivacyScannerTests;
+			productName = PrivacyScannerTests;
+			productReference = 8BB8E31F23C47EB2004AACF8 /* PrivacyScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BB8E32923C47EB2004AACF8 /* PrivacyScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB8E33923C47EB2004AACF8 /* Build configuration list for PBXNativeTarget "PrivacyScannerUITests" */;
+			buildPhases = (
+				8BB8E32623C47EB2004AACF8 /* Sources */,
+				8BB8E32723C47EB2004AACF8 /* Frameworks */,
+				8BB8E32823C47EB2004AACF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BB8E32C23C47EB2004AACF8 /* PBXTargetDependency */,
+			);
+			name = PrivacyScannerUITests;
+			productName = PrivacyScannerUITests;
+			productReference = 8BB8E32A23C47EB2004AACF8 /* PrivacyScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BB8E30223C47EB0004AACF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Dennis Jaeger";
+				TargetAttributes = {
+					8BB8E30923C47EB0004AACF8 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					8BB8E31E23C47EB2004AACF8 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 8BB8E30923C47EB0004AACF8;
+					};
+					8BB8E32923C47EB2004AACF8 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 8BB8E30923C47EB0004AACF8;
+					};
+				};
+			};
+			buildConfigurationList = 8BB8E30523C47EB0004AACF8 /* Build configuration list for PBXProject "PrivacyScanner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = 8BB8E30123C47EB0004AACF8;
+			productRefGroup = 8BB8E30B23C47EB0004AACF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BB8E30923C47EB0004AACF8 /* PrivacyScanner */,
+				8BB8E31E23C47EB2004AACF8 /* PrivacyScannerTests */,
+				8BB8E32923C47EB2004AACF8 /* PrivacyScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BB8E30823C47EB0004AACF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB8E31823C47EB2004AACF8 /* Main.storyboard in Resources */,
+				8BB8E31523C47EB2004AACF8 /* Preview Assets.xcassets in Resources */,
+				8BB8E31223C47EB2004AACF8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB8E31D23C47EB2004AACF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB8E32823C47EB2004AACF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BB8E30623C47EB0004AACF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4DFFCC23C480BA00328D50 /* ThreatmentChecker.swift in Sources */,
+				8BB8E31023C47EB0004AACF8 /* ContentView.swift in Sources */,
+				8BB8E30E23C47EB0004AACF8 /* AppDelegate.swift in Sources */,
+				8B4DFFCD23C480BA00328D50 /* ThreatmentComponents.swift in Sources */,
+				8B67ABEB23D1EBDF00FCF206 /* CheckerHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB8E31B23C47EB2004AACF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB8E32423C47EB2004AACF8 /* PrivacyScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB8E32623C47EB2004AACF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB8E32F23C47EB2004AACF8 /* PrivacyScannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BB8E32123C47EB2004AACF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BB8E30923C47EB0004AACF8 /* PrivacyScanner */;
+			targetProxy = 8BB8E32023C47EB2004AACF8 /* PBXContainerItemProxy */;
+		};
+		8BB8E32C23C47EB2004AACF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BB8E30923C47EB0004AACF8 /* PrivacyScanner */;
+			targetProxy = 8BB8E32B23C47EB2004AACF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BB8E31623C47EB2004AACF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB8E31723C47EB2004AACF8 /* Base */,
+				8B90D1FA23DF2208008B5B85 /* de */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BB8E33123C47EB2004AACF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_SEMICOLON_BEFORE_METHOD_BODY = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BB8E33223C47EB2004AACF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_SEMICOLON_BEFORE_METHOD_BODY = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8BB8E33423C47EB2004AACF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PrivacyScanner/PrivacyScanner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrivacyScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = VV5Y48AFG7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PrivacyScanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = TH.PrivacyScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8BB8E33523C47EB2004AACF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PrivacyScanner/PrivacyScanner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrivacyScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = VV5Y48AFG7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PrivacyScanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = TH.PrivacyScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8BB8E33723C47EB2004AACF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VV5Y48AFG7;
+				INFOPLIST_FILE = PrivacyScannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = TH.PrivacyScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrivacyScanner.app/Contents/MacOS/PrivacyScanner";
+			};
+			name = Debug;
+		};
+		8BB8E33823C47EB2004AACF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VV5Y48AFG7;
+				INFOPLIST_FILE = PrivacyScannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = TH.PrivacyScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrivacyScanner.app/Contents/MacOS/PrivacyScanner";
+			};
+			name = Release;
+		};
+		8BB8E33A23C47EB2004AACF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VV5Y48AFG7;
+				INFOPLIST_FILE = PrivacyScannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TH.PrivacyScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PrivacyScanner;
+			};
+			name = Debug;
+		};
+		8BB8E33B23C47EB2004AACF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VV5Y48AFG7;
+				INFOPLIST_FILE = PrivacyScannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TH.PrivacyScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PrivacyScanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BB8E30523C47EB0004AACF8 /* Build configuration list for PBXProject "PrivacyScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB8E33123C47EB2004AACF8 /* Debug */,
+				8BB8E33223C47EB2004AACF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BB8E33323C47EB2004AACF8 /* Build configuration list for PBXNativeTarget "PrivacyScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB8E33423C47EB2004AACF8 /* Debug */,
+				8BB8E33523C47EB2004AACF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BB8E33623C47EB2004AACF8 /* Build configuration list for PBXNativeTarget "PrivacyScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB8E33723C47EB2004AACF8 /* Debug */,
+				8BB8E33823C47EB2004AACF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BB8E33923C47EB2004AACF8 /* Build configuration list for PBXNativeTarget "PrivacyScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB8E33A23C47EB2004AACF8 /* Debug */,
+				8BB8E33B23C47EB2004AACF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BB8E30223C47EB0004AACF8 /* Project object */;
+}
